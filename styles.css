@@ -1,0 +1,82 @@
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: #1e1e2f;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: #2c2c3e;
+      padding: 1rem;
+      color: white;
+    }
+    .sidebar h3 {
+      margin-top: 0;
+    }
+    .element {
+      background: #444;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      cursor: grab;
+      transition: background 0.3s;
+    }
+    .element:hover {
+      background: #5a5a75;
+    }
+    .canvas {
+      flex-grow: 1;
+      padding: 2rem;
+      background: #fff;
+      overflow-y: auto;
+    }
+    .drop-zone {
+      min-height: 80vh;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      transition: background 0.3s;
+    }
+    .drop-zone:hover {
+      background: #f0f0f0;
+    }
+    .canvas .text, .canvas .image, .canvas .button {
+      margin: 1rem 0;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      position: relative;
+    }
+    .canvas .button button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background: #007bff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .edit-area {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: rgba(0,0,0,0.05);
+      border-radius: 4px;
+      padding: 0.3rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
